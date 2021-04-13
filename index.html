@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web-Based Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="input"></div>
+        <div id="buttons">
+            <button class="box" id="clear" onclick="cleared()">C</button>
+
+            <button class="box" id="backspace" onclick="backspace()"><i class="fa fa-long-arrow-left"></i></button>
+            
+            <button class="box" id="division" onclick="divide()">/</button>
+            
+            <button class="box" id="multiplication" onclick="multiply()">*</button>
+            
+            <button class="box" id="seven" onclick="addSeven()">7</button>
+            
+            <button class="box" id="eight" onclick="addEight()">8</button>
+            
+            <button class="box" id="nine" onclick="addNine()">9</button>
+            
+            <button class="box" id="subtract" onclick="minus()">-</button>
+            
+            <button class="box" id="four" onclick="addFour()">4</button>
+            
+            <button class="box" id="five" onclick="addFive()">5</button>
+            
+            <button class="box" id="six" onclick="addSix()">6</button>
+            
+            <button class="box" id="add" onclick="add()">+</button>
+            
+            <button class="box" id="one" onclick="addOne()">1</button>
+            
+            <button class="box" id="two" onclick="addTwo()">2</button>
+            
+            <button class="box" id="three" onclick="addThree()">3</button>
+            
+            <button class="box" id="decimal" onclick="addDecimal()">.</button>
+            
+            <button class="box" id="zero" onclick="addZero()">0</button>
+            
+            <button class="box" id="equal" onclick="result()">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
