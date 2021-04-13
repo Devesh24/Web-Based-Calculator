@@ -8,11 +8,16 @@ body{
     background-color: rebeccapurple;
 }
 .container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1{
     border: 2px solid black;
     border-radius: 15px;
     height: 500px;
     width: 380px;
-    margin: 70px auto;
     padding: 20px;
     background-color: black;
 }
@@ -66,16 +71,17 @@ body{
     display: none;
 }
 
-
-@media screen and (max-height: 650px){
-    .container{
-        display: none;
+@media screen and (max-width: 390px){
+    .container1{
+        width: 340px;
+    }   
+    #input{
+        width: 300px;
     }
-    .container2{
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+}
+@media screen and (max-height: 500px){
+    .container1{
+        display: none;
     }
     #prompt{
         display: flex;
