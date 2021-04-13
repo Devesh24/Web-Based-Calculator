@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Web-Based Calculator</title>
-    <link rel="stylesheet" href="calc.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="calc.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
+      <div class="container1">
         <div id="input"></div>
         <div id="buttons">
-            <div class="box" id="clear" onclick="cleared()">C</div>
+          <div class="box" id="clear" onclick="cleared()">C</div>
 
-            <div class="box" id="backspace" onclick="backspace()"><i class="fa fa-long-arrow-left"></i></div>
-            
-            <div class="box" id="division" onclick="divide()">/</div>
-            
-            <div class="box" id="multiplication" onclick="multiply()">*</div>
-            
-            <div class="box" id="seven" onclick="addSeven()">7</div>
-            
-            <div class="box" id="eight" onclick="addEight()">8</div>
-            
-            <div class="box" id="nine" onclick="addNine()">9</div>
-            
-            <div class="box" id="subtract" onclick="minus()">-</div>
-            
-            <div class="box" id="four" onclick="addFour()">4</div>
-            
-            <div class="box" id="five" onclick="addFive()">5</div>
-            
-            <div class="box" id="six" onclick="addSix()">6</div>
-            
-            <div class="box" id="add" onclick="add()">+</div>
-            
-            <div class="box" id="one" onclick="addOne()">1</div>
-            
-            <div class="box" id="two" onclick="addTwo()">2</div>
-            
-            <div class="box" id="three" onclick="addThree()">3</div>
-            
-            <div class="box" id="decimal" onclick="addDecimal()">.</div>
-            
-            <div class="box" id="zero" onclick="addZero()">0</div>
-            
-            <div class="box" id="equal" onclick="result()">=</div>
+          <div class="box" id="backspace" onclick="backspace()">
+            <i class="fa fa-long-arrow-left"></i>
+          </div>
+
+          <div class="box" id="division" onclick="divide()">/</div>
+
+          <div class="box" id="multiplication" onclick="multiply()">*</div>
+
+          <div class="box" id="seven" onclick="addSeven()">7</div>
+
+          <div class="box" id="eight" onclick="addEight()">8</div>
+
+          <div class="box" id="nine" onclick="addNine()">9</div>
+
+          <div class="box" id="subtract" onclick="minus()">-</div>
+
+          <div class="box" id="four" onclick="addFour()">4</div>
+
+          <div class="box" id="five" onclick="addFive()">5</div>
+
+          <div class="box" id="six" onclick="addSix()">6</div>
+
+          <div class="box" id="add" onclick="add()">+</div>
+
+          <div class="box" id="one" onclick="addOne()">1</div>
+
+          <div class="box" id="two" onclick="addTwo()">2</div>
+
+          <div class="box" id="three" onclick="addThree()">3</div>
+
+          <div class="box" id="decimal" onclick="addDecimal()">.</div>
+
+          <div class="box" id="zero" onclick="addZero()">0</div>
+
+          <div class="box" id="equal" onclick="result()">=</div>
         </div>
-    </div>
-    <div class="container2">
-        <div id="prompt">
-            Please rotate your device
-        </div>
+      </div>
+      <div id="prompt">Please rotate your device</div>
     </div>
     <script src="calc.js"></script>
-</body>
+  </body>
 </html>
