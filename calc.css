@@ -1,28 +1,32 @@
+
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
+body{
+    background-color: rebeccapurple;
+}
 .container{
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 15px;
     height: 500px;
     width: 380px;
     margin: 70px auto;
     padding: 20px;
-    background-color: teal;
+    background-color: black;
 }
 #input{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 335px;
     height: 60px;
     border-radius: 5px;
-    text-align: center;
-    font-size: 30px;
-    background-color: white;
-    color: black;
+    text-align: right;
+    font-size: 40px;
+    background-color: black;
+    color: white;
 }
 #buttons{
     display: grid;
@@ -35,8 +39,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
-    border-radius: 3px;
+    background-color: rgb(95, 93, 93);
+    border-radius: 50%;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
@@ -47,12 +51,41 @@
 #zero{
     grid-column-start: 1;
     grid-column-end: 3;
+    border-radius: 20px;
 }
 #equal{
     grid-column-start: 3;
     grid-column-end: 5;
-    background-color: tomato;
+    background-color: orangered;
+    border-radius: 20px;
 }
 #clear, #backspace{
-    background-color: tomato;
+    background-color: orangered;
+}
+#prompt{
+    display: none;
+}
+
+
+@media screen and (max-height: 650px){
+    .container{
+        display: none;
+    }
+    .container2{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #prompt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 15px;
+        height: 100px;
+        width: 400px;
+        font-size: 30px;
+    }
 }
