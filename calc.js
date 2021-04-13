@@ -1,8 +1,4 @@
 
-if(screen.height < 650){
-    alert("Please rotate your device");
-}
-
 function cleared() {
     document.getElementById('input').innerHTML = '';
 }
