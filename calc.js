@@ -56,19 +56,51 @@ function addDecimal() {
 }
 function add() {
     let input = document.getElementById('input').innerHTML;
-    document.getElementById('input').innerHTML = input + '+';
+    let len = input.length;
+    let char = input.charAt(len-1);
+    let input1 = input.substr(0, len-1);
+    if(char == '-' || char == '*' || char == '/'){
+        document.getElementById('input').innerHTML = input.replace(input , input1 + '+') ;  
+    }
+    else{
+        document.getElementById('input').innerHTML = input + '+';
+    }
 }
 function minus() {
     let input = document.getElementById('input').innerHTML;
-    document.getElementById('input').innerHTML = input + '-';
+    let len = input.length;
+    let char = input.charAt(len-1);
+    let input1 = input.substr(0, len-1);
+    if(char == '+' || char == '*' || char == '/'){
+        document.getElementById('input').innerHTML = input.replace(input , input1 + '-') ;  
+    }
+    else{
+        document.getElementById('input').innerHTML = input + '-';
+    }
 }
 function multiply() {
     let input = document.getElementById('input').innerHTML;
-    document.getElementById('input').innerHTML = input + '*';
+    let len = input.length;
+    let char = input.charAt(len-1);
+    let input1 = input.substr(0, len-1);
+    if(char == '-' || char == '+' || char == '/'){
+        document.getElementById('input').innerHTML = input.replace(input , input1 + '*') ;  
+    }
+    else{
+        document.getElementById('input').innerHTML = input + '*';
+    }
 }
 function divide() {
     let input = document.getElementById('input').innerHTML;
-    document.getElementById('input').innerHTML = input + '/';
+    let len = input.length;
+    let char = input.charAt(len-1);
+    let input1 = input.substr(0, len-1);
+    if(char == '-' || char == '*' || char == '+'){
+        document.getElementById('input').innerHTML = input.replace(input , input1 + '/') ;  
+    }
+    else{
+        document.getElementById('input').innerHTML = input + '/';
+    }
 }
 
 function result() {
