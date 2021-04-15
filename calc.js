@@ -106,5 +106,6 @@ function divide() {
 function result() {
     let input = document.getElementById('input').innerHTML;
     let z = eval(input);
-    document.getElementById('input').innerHTML = z;
+    let round = Math.round(z*1000000000)/1000000000;
+    document.getElementById('input').innerHTML = round;
 }
