@@ -14,20 +14,19 @@ body{
     justify-content: center;
 }
 .container1{
-    border: 2px solid black;
-    border-radius: 15px;
-    height: 500px;
+    height: 499px;
     width: 380px;
-    padding: 20px;
     background-color: black;
+    display: grid;
+    grid-template-rows: 1.5fr 5fr;
 }
 #input{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 335px;
-    height: 60px;
-    border-radius: 5px;
+    width: 380px;
+    margin: 20px 0px;
+    padding: 0px 15px;
     text-align: right;
     font-size: 40px;
     background-color: black;
@@ -36,50 +35,78 @@ body{
 #buttons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: 65px;
-    margin: 25px 0px;
 }
 .box{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(49, 189, 245);
-    border-radius: 50%;
     text-align: center;
     font-weight: bold;
     font-size: 25px;
 }
 .box:hover{
     cursor: pointer;
-}
-#zero{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    border-radius: 20px;
+    color: white;
 }
 #equal{
     grid-column-start: 3;
     grid-column-end: 5;
-    background-color: orangered;
-    border-radius: 20px;
+    background-color: rgb(8, 245, 146);
 }
-#clear, #backspace{
+#clear{
     background-color: orangered;
+}
+#backspace{
+    background-color: rgb(240, 81, 23);
+}
+#division{
+    background-color: rgb(236, 91, 38);
+}
+#multiplication{
+    background-color: rgb(235, 99, 50);
+}
+#subtract{
+    background-color: rgb(236, 91, 38);
+}
+#add{
+    background-color: rgb(240, 81, 23);
+}
+#decimal{
+    background-color: orangered;
+}
+#seven, #eight, #nine{
+    background-color: crimson;
+}
+#four, #five, #six{
+    background-color: rgb(218, 36, 72);
+}
+#one, #two, #three{
+    background-color: rgb(216, 47, 81);
+}
+#zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(212, 68, 97);
 }
 #prompt{
     display: none;
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 450px){
     .container1{
-        width: 340px;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 1.5fr 5fr;
     }   
-    #input{
-        width: 300px;
+    .box{
+        font-size: 30px;
     }
+    #input{
+        font-size: 50px;
+        width: 100vw;
+    } 
 }
-@media screen and (max-height: 500px){
+@media screen and (max-height: 450px) and (orientation: landscape){
     .container1{
         display: none;
     }
